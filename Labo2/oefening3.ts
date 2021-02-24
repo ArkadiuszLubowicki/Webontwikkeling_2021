@@ -8,3 +8,11 @@ for(let i = 0; i <= 70; i++)
     }
 }
 console.log(veelvouden_7);
+
+for(let i = 0; i <= 11; i++)
+{
+    if(veelvouden_7[i] % 5 == 0 || veelvouden_7[i] % 3 == 0)
+    {
+        console.log(veelvouden_7[i]);
+    }
+}
