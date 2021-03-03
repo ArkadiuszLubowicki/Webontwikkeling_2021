@@ -1,7 +1,12 @@
 let word: string = "sven is here";
+let reverse: string = "";
 
-for(let c of word){​​
+function reverseString(woord){
+    for(let c of woord){​​
+        reverse = c + reverse;
+    }​​
+    return reverse;
+}
 
-    console.log(c);
-
-}​​
+console.log(reverseString(word));
+reverseString(word);
