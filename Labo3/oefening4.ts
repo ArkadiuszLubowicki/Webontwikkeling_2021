@@ -15,7 +15,7 @@ function multiplyTextColor(amount: number, text: string = "default", color: Colo
         tekst = tekst.concat(appendix);
     }
 
-    console.log("%c"+tekst, "color: red");
+    console.log(tekst);
     //console.log(kleur(tekst));
     return tekst;
 }
