@@ -12,3 +12,14 @@ let myfavoritemovie: Movie = {title: "Shrek", year: 2001, actors: ["Mike Myers",
 
 let myworstmovie: Movie = {title: "The Last Airbender", year: 2010, actors: ["Noah Ringer", "Dev Patel", "Nicola Pelts", "Jackson Rathbone"], metascore: 20, seen: true};
 
+function wasMovieMadeInThe90s(movie: Movie){
+    if(movie.year >= 1990 && movie.year < 2000){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+console.log(wasMovieMadeInThe90s(thematrix));
+console.log(wasMovieMadeInThe90s(myfavoritemovie));
