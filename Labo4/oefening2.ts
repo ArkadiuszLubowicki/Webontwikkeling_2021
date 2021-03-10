@@ -29,9 +29,12 @@ function averageMetaScore(movies: Movie[]){
     return average /= movies.length;
 }
 
+function fakeMetaScore(movie: Movie, newscore: number){
+    movie.metascore = newscore;
+    return movie;
+}
+
 console.log(wasMovieMadeInThe90s(thematrix));
 console.log(wasMovieMadeInThe90s(myfavoritemovie));
 
 let allefilms: Movie[] = [thematrix, myfavoritemovie, myworstmovie];
-
-console.log(averageMetaScore(allefilms));
