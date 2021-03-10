@@ -21,5 +21,17 @@ function wasMovieMadeInThe90s(movie: Movie){
     }
 }
 
+function averageMetaScore(movies: Movie[]){
+    let average: number = 0;
+    for(let i = 0; i < movies.length; i++){
+        average += movies[i].metascore;
+    }
+    return average /= movies.length;
+}
+
 console.log(wasMovieMadeInThe90s(thematrix));
 console.log(wasMovieMadeInThe90s(myfavoritemovie));
+
+let allefilms: Movie[] = [thematrix, myfavoritemovie, myworstmovie];
+
+console.log(averageMetaScore(allefilms));
