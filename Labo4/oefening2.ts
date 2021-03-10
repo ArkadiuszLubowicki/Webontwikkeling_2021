@@ -6,6 +6,18 @@ interface Movie {
     seen: boolean
 }
 
+interface WasMovieMadeInThe90s {
+    (movie: Movie):boolean;
+}
+
+interface AverageMetaScore {
+    (movies: Movie[]):number;
+}
+
+interface FakeMetaScore {
+    (movie: Movie, newscore: number):Movie;
+}
+
 let thematrix: Movie = {title: "The Matrix", year: 1999, actors: ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"], metascore: 73, seen: true};
 
 let myfavoritemovie: Movie = {title: "Shrek", year: 2001, actors: ["Mike Myers", "Eddie Murphy", "Cameron Diaz"], metascore: 84, seen: true};
