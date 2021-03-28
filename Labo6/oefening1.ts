@@ -3,3 +3,6 @@ let numbers2: number[] = [4,5,6];
 let numbers3: number[] = [7,8,9];
 
 let allNumbers: number[] = [...numbers1, ...numbers2, ...numbers3];
+console.log(allNumbers);
+let extraNumbers: number[] = [...allNumbers, 10, 11, 12];
+console.log(extraNumbers);
