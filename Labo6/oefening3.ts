@@ -17,6 +17,16 @@ let starterPokemonGen2 : Pokemon[]  = [
 
 // Spread
 let starters: Pokemon[] = [...starterPokemonGen1, ...starterPokemonGen2];
-console.log(starters);
+//console.log(starters);
 
 // Map
+let names: string[] = starters.map(e=>e.name);
+//console.log(names);
+
+//Filter
+let weakPokemon: Pokemon[] = starters.filter(e=>e.xp<=40);
+console.log(weakPokemon);
+
+
+
+export {};
