@@ -25,7 +25,11 @@ let names: string[] = starters.map(e=>e.name);
 
 //Filter
 let weakPokemon: Pokemon[] = starters.filter(e=>e.xp<=40);
-console.log(weakPokemon);
+//console.log(weakPokemon);
+
+// Combineren (Map + Filter)
+let weakPokemonNames: string[] = starters.filter(e=>e.xp<=40).map(e=>e.name);
+console.log(weakPokemonNames);
 
 
 
