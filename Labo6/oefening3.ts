@@ -39,6 +39,6 @@ let sumOfAllXp = starters.reduce((sum, element) => sum + element.xp, 0);
 
 // Combineren (Reduce + Filter)
 let sumOfAllXpOfWeakPokemon = starters.filter(e=>e.xp<=40).reduce((sum, element) => sum + element.xp, 0);
-console.log()
+console.log(sumOfAllXpOfWeakPokemon)
 
 export {};
