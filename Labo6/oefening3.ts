@@ -23,14 +23,22 @@ let starters: Pokemon[] = [...starterPokemonGen1, ...starterPokemonGen2];
 let names: string[] = starters.map(e=>e.name);
 //console.log(names);
 
-//Filter
+// Filter
 let weakPokemon: Pokemon[] = starters.filter(e=>e.xp<=40);
 //console.log(weakPokemon);
 
 // Combineren (Map + Filter)
 let weakPokemonNames: string[] = starters.filter(e=>e.xp<=40).map(e=>e.name);
-console.log(weakPokemonNames);
+//console.log(weakPokemonNames);
 
+// Reduce
+let sumOfAllXp = starters.reduce((sum, element) => sum + element.xp, 0);
+//console.log(sumOfAllXp);
 
+// Ik weet niet hoe StrongestPokemon moet
+
+// Combineren (Reduce + Filter)
+let sumOfAllXpOfWeakPokemon = starters.filter(e=>e.xp<=40).reduce((sum, element) => sum + element.xp, 0);
+console.log()
 
 export {};
