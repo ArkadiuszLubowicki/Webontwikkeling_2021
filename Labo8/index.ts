@@ -1,10 +1,12 @@
 const express = require('express');
 const app = express();
+const ejs = require('ejs');
+
+app.set('view engine', 'ejs');
 app.set('port', 3000);
 
 app.get('/',(req:any,res:any)=>{
-    res.type('text/html');
-    res.send('Hello <strong>World</strong>')
+    res.render('index');
 });
 
 app.get('/whoami',(req:any,res:any)=>{
