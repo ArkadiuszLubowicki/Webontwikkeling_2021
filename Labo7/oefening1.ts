@@ -15,3 +15,4 @@ const slowMult = (a: number, b: number) => {
 }
 
 slowSum(1,5).then(r=>console.log(r));
+slowSum(1,5).then(r=>slowMult(r,2)).then(r=>console.log(r));
