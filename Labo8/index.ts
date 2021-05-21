@@ -6,8 +6,8 @@ app.set('view engine', 'ejs');
 app.set('port', 3000);
 
 let thisisme = {
-    name: "Sven",
-    age: 40,
+    name: "Arek",
+    age: 24,
     profilePic: "https://www.1limburg.nl/sites/default/files/public/styles/media-paragraph/public/istock-619961796.jpg?itok=RuN0wixY"
 }
 
@@ -16,8 +16,7 @@ app.get('/',(req:any,res:any)=>{
 });
 
 app.get('/whoami',(req:any,res:any)=>{
-    res.type('text/html');
-    res.send('Hello <strong>World</strong>')
+    res.render("whoami", {data:thisisme})
 });
 
 app.get('/whoamijson',(req:any,res:any)=>{
