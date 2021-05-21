@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
+const ejs = require('ejs');
+
+app.sett('view-engine', 'ejs');
 app.set('port', 3000);
+
 
 app.get('/',(req:any,res:any)=>{
     res.rener("index");
