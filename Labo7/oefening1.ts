@@ -27,5 +27,5 @@ const slowDiv = (a: number, b: number) => {
 
 slowSum(1,5).then(r=>console.log(r));
 slowSum(1,5).then(r=>slowMult(r,2)).then(r=>console.log(r));
-slowDiv(6,4).then(r=>console.log(r));
-slowDiv(6,0).then(r=>console.log(r));
+slowDiv(6,3).then(r=>console.log(r));
+slowDiv(6,0).then(r=>console.log(r)).catch(e=>console.log(e));
