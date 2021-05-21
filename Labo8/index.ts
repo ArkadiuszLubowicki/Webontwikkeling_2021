@@ -3,8 +3,7 @@ const app = express();
 app.set('port', 3000);
 
 app.get('/',(req:any,res:any)=>{
-    res.type('text/html');
-    res.send('Hello <strong>World</strong>')
+    res.rener("index");
 });
 
 app.get('/whoami',(req:any,res:any)=>{
