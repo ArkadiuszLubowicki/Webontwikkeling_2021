@@ -7,7 +7,7 @@ app.set('port', 3000);
 app.use(express.static('public'));
 
 app.get('/',(req:any,res:any)=>{
-    res.render("header");
+    res.render("landing");
 });
 
 app.listen(app.get('port'), 
