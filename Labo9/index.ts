@@ -21,6 +21,11 @@ app.get('/movies',(req:any,res:any)=>{
     res.render("movies", {movies:movies});
 });
 
+app.get('/movies/:x',(req:any,res:any)=>{
+    let x = req.params.x;
+    res.render("movie", {movie:movies[x]});
+});
+
 app.listen(app.get('port'), 
     ()=>console.log( '[server] http://localhost:' + app.get('port')));
 

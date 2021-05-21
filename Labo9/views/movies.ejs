@@ -1,11 +1,13 @@
 <%- include('header') %>
 
 <ul>
-    <% movies.forEach(m=>{ %>
+    <% for(let i = 0; i < movies.length; i++) { %>
 
-        <li><%= m.name %> <br/></li>
+        <li><%= movies[i].name %> <br/>
+            <a href="/movies/<%= i %>">pagina</a>
+        </li>
     
-    <% }); %>
+    <% }; %>
 </ul>
 
 <a href="/">TERUG NAAR HOME</a>
